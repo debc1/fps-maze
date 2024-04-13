@@ -113,7 +113,7 @@ class FirstPersonCamera {
     this.camera_ = camera;
     this.input_ = new InputController();
     this.rotation_ = new THREE.Quaternion();
-    this.translation_ = new THREE.Vector3(10, 2, -4);
+    this.translation_ = new THREE.Vector3(-40, 2, 0);
     this.phi_ = 0;
     this.phiSpeed_ = 8;
     this.theta_ = 0;
@@ -259,7 +259,7 @@ class FirstPersonCameraMaze {
     const near = 1.0;
     const far = 1000.0;
     this.camera_ = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    this.camera_.position.set(10, 2, -4);
+    this.camera_.position.set(-40, 2, 0);
 
     this.scene_ = new THREE.Scene();
 
